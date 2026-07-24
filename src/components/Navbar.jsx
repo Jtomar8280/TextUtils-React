@@ -9,7 +9,7 @@ export default function Navbar(props) {
     return (
         <nav className="navbar navbar-expand-lg sticky-top m-0 p-0 py-2" style={{backgroundColor: props.mode === "dark" ? "#000509" : "#e3f2fd", color: props.mode === "dark" ? "#e3f2fd" : "#000509"}}>
         <div className="container-fluid">
-            <a className="navbar-brand" style={{ color: props.mode === "dark" ? "#e3f2fd" : "#000509" }} href="#">{props.title}</a>
+            <a className="navbar-brand fw-bold fs-3" style={{ color: props.mode === "dark" ? "#e3f2fd" : "#000509" }} href="#">{props.title}</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
@@ -20,8 +20,8 @@ export default function Navbar(props) {
                 </li>
             </ul>
             </div>
-            <div className="form-check form-switch">
-                <input type="color" className="color-picker" value={props.color} onChange={props.changeColor}/>
+            <div className="d-flex align-items-center gap-3 mt-2 mt-lg-0">
+                <input type="color" className="form-control form-control-color" value={props.color} onChange={props.changeColor}/>
                 <input className="form-check-input" type="checkbox" onClick={props.toggleMode} role="switch" id="switchCheckChecked"/>
                 <label className="form-check-label" style={{ color: props.mode === "dark" ? "#e3f2fd" : "#000509" }} htmlFor="switchCheckChecked">Enable {props.mode === "light" ? "Dark" : "Light"} Mode</label>
             </div>

@@ -7,3 +7,27 @@
   cursor: pointer;
   overflow: hidden;
 }
+
+textarea{
+    resize:none;
+}
+
+.btn{
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.card{
+    border-radius:15px;
+}
+
+textarea{
+    border-radius:12px;
+}
+
+body{
+    transition:0.3s;
+}

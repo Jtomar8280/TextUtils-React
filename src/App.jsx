@@ -32,7 +32,7 @@ function App() {
       <TextArea mode={mode} color={color}/>
       <About/>*/}
         <Navbar title="Textutils" about="About Textutils" color={color} changeColor={changeColor} toggleMode={toggleMode} mode={mode}/>
-        <div className='container my-3'>
+        <div className='container py-4'>
           <TextArea mode={mode} color={color}/>
         </div>
     </>
